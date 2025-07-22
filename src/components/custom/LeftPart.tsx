@@ -14,7 +14,7 @@ const LeftPart: React.FC<Props> = (props) => {
         <div className="flex flex-col w-full items-center p-10">
           <img
             className="w-26 h-36 rounded-full"
-            src="https://raw.githubusercontent.com/ShreehariVaasishta/shreeharivl.github.io/main/assets/my.jpg"
+            src="https://raw.githubusercontent.com/ShreehariVaasishta/ShreehariVaasishta.github.io/main/assets/my.jpg"
             alt="Rounded avatar"
           />
 
