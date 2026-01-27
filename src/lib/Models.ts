@@ -6,8 +6,11 @@ export interface IDirectMessageItem {
 export interface IListItem {
     title: string,
     desc?: string,
-    logo: string,
+    logo?: string,
     link?: string,
+    date?: string,
+    subtitle?: string,
+    techStack?: string[],
 }
 
 export interface ITitledListItem {
@@ -17,19 +20,37 @@ export interface ITitledListItem {
 }
 
 export interface IInitialInformation {
-    iconText: string
     name: string
-    occupation: string
+    intro: string
+    email: string
 }
 
-// 
-export interface IRoutedSection {
-    name: string;
-    items: ITitledListItem[];
+export interface IOpenSourceContribution {
+    title: string
+    link: string
+    role: string
+    description: string
+    techStack: string[]
+}
+
+export interface IEducation {
+    institution: string
+    degree: string
+    description: string
+    isAccent?: boolean
+}
+
+export interface ISkillCategory {
+    title: string
+    skills: string[]
 }
 
 export interface ICombinedInformation {
     initialInformation: IInitialInformation,
     directMessageItems: IDirectMessageItem[],
-    routes: IRoutedSection[],
+    experience: IListItem[],
+    openSource: IOpenSourceContribution[],
+    operatingPrinciples: string[],
+    competencies: ISkillCategory[],
+    education: IEducation[],
 }
