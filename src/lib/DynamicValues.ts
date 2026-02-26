@@ -106,6 +106,7 @@ class DynamicValues {
     "simplicity over complexity always wins.",
     "don't wait to see it to believe it. believe it to see it.",
     "we all serve a unique purpose. keep moving until you find yours.",
+    "There is no duality without singularity.",
   ];
 
   static competencies: ISkillCategory[] = [
